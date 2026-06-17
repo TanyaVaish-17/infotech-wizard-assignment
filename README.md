@@ -7,7 +7,7 @@
 
 ## 🔗 Live Demo
 
-👉 (#)** *https://infotech-wizard-assignment-zeta.vercel.app/*
+👉 *https://infotech-wizard-assignment-zeta.vercel.app/*
 
 ---
 
