@@ -7,7 +7,7 @@
 
 ## 🔗 Live Demo
 
-👉 **[View Live on Netlify/Vercel](#)** *https://infotech-wizard-assignment-zeta.vercel.app/*
+👉 (#)** *https://infotech-wizard-assignment-zeta.vercel.app/*
 
 ---
 
