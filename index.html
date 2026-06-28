@@ -140,7 +140,7 @@ body{font-family:'Roboto',sans-serif;color:#000;background:#fff;overflow-x:hidde
   display:block;
   width:100%;
   height:auto;
-  margin-top: 40px; 
+  margin-top:8px;
 }
 
 .sec2-vec1{
@@ -163,7 +163,7 @@ body{font-family:'Roboto',sans-serif;color:#000;background:#fff;overflow-x:hidde
   font-weight:400;
   line-height:32px;
   color:#282828;
-  margin-bottom:28px;
+  margin:24px 0 32px;
 }
 .feat-card{
   border:1.5px solid #e0e0e0;border-radius:12px;
@@ -189,21 +189,81 @@ body{font-family:'Roboto',sans-serif;color:#000;background:#fff;overflow-x:hidde
     flex-direction:column;align-items:center;text-align:center;
     padding:48px 40px 60px;gap:36px;min-height:auto;
   }
-  .hero-left{flex:none;width:100%;align-items:center;}
-  .hero-left h1{font-size:46px;line-height:62px;}
-  .hero-left h1 br{display:none;}
+  .hero-left{width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+  .hero-left h1{font-size:52px;line-height:1.15;max-width:650px;margin:0 auto;}
+  .hero-left h1 br{display:block;}
+  .hero-left h1 .blue{white-space:nowrap;}
   .hero-desc{text-align:center;font-size:16px;line-height:28px;}
   .hero-checks{align-items:flex-start;text-align:left;display:inline-flex;}
   .hero-btns{justify-content:center;flex-wrap:wrap;}
   .hero-right{width:100%;max-width:500px;}
   .hero-img{max-height:460px;}
 
-  .sec2{flex-direction:column;padding:60px 40px 80px;gap:36px;}
-  .sec2-left{flex:none;max-width:100%;width:100%;}
-  .sec2-left h2{font-size:36px;line-height:1.3;}
-  .sec2-vec1{width:80px;}
-  .sec2-right{width:100%;}
-  .sec2-desc{font-size:16px;line-height:28px;}
+  .sec2{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:60px 40px 80px;
+    gap:40px;
+  }
+
+  .sec2-left{
+      width:100%;
+      max-width:700px;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      position:relative;
+      overflow:visible;
+  }
+
+  .sec2-left h2{
+      font-size:40px;
+      line-height:1.2;
+      margin-bottom:0;
+  }
+
+  .sec2-desc{
+      width:100%;
+      max-width:650px;
+      font-size:16px;
+      line-height:28px;
+      text-align:center;
+      margin:22px 0 28px;
+  }
+
+  .sec2-img{
+    display:block;
+    width:100%;
+    max-width:500px;
+    height:auto;
+    margin:30px auto 32px;
+  }
+
+  .sec2-right{
+      width:100%;
+      max-width:700px;
+      display:flex;
+      flex-direction:column;
+      gap:16px;
+  }
+
+  .sec2-vec1{
+      position:absolute;
+      width:150px;
+      left:-28px;
+      bottom:-30px;
+  }
+
+  .sec2-curl{
+    position:absolute;
+    width:22px;
+    height:auto;
+    top:235px;
+    right:65px;
+    z-index:2;
+  }
 }
 
 /* ══ MOBILE ≤500px ══ */
@@ -228,12 +288,19 @@ body{font-family:'Roboto',sans-serif;color:#000;background:#fff;overflow-x:hidde
 
   .sec2{padding:36px 20px 60px;gap:24px;}
   .sec2-left h2{font-size:28px;line-height:1.35;}
-  .sec2-vec1{width:60px;}
+  .sec2-vec1{width:90px;bottom:-15px}
   .sec2-desc{font-size:14px;line-height:24px;margin-bottom:16px;}
   .feat-card{padding:14px 12px;gap:14px;}
   .feat-card img{width:32px;height:32px;}
   .feat-text h3{font-size:16px;}
   .feat-text p{font-size:13px;line-height:22px;}
+  .sec2-img{
+    display:block;
+    width:100%;
+    max-width:420px;
+    height:auto;
+    margin:45px auto 24px;
+  }
 }
 </style>
 </head>
@@ -277,7 +344,13 @@ body{font-family:'Roboto',sans-serif;color:#000;background:#fff;overflow-x:hidde
 <!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-left">
-    <h1>Simplifying<br><span class="blue">Compliance<img src="assets/underline-vector.png" class="uline" alt=""/></span> For<br>Research Analysts</h1>
+    <h1>
+      Simplifying <span class="blue">
+        Compliance
+        <img src="assets/underline-vector.png" class="uline" alt="">
+      </span><br>
+      For Research Analysts
+    </h1>
     <p class="hero-desc">Stay Focused On Your Insights—We'll Handle The Compliance. Our Expert Solutions Ensure Your Research Practices Meet Every Regulatory Requirement With Confidence And Ease</p>
     <ul class="hero-checks">
       <li><img src="assets/check-sign.png" alt=""/>End-To-End Compliance Support</li>
@@ -297,28 +370,57 @@ body{font-family:'Roboto',sans-serif;color:#000;background:#fff;overflow-x:hidde
 <!-- SECTION 2 -->
 <section class="sec2" id="about">
   <div class="sec2-left">
+
     <h2>
-      Why <span class="blue">Compliance Matters</span><br>
-      For Research Analysts
-      <img src="assets/vector2.png" class="sec2-curl" alt="">
+        Why <span class="blue">Compliance Matters</span><br>
+        For Research Analysts
     </h2>
-    <img src="assets/vector2.png" class="sec2-curl" alt=""/>
-    <img src="assets/section2-image.png" class="sec2-img" alt="Research analyst"/>
-    <img src="assets/vector1.png" class="sec2-vec1" alt=""/>
+
+    <!-- Paragraph moved below heading -->
+    <p class="sec2-desc">
+        In Today's Regulatory Environment, Even A Small Oversight Can Lead To Penalties,
+        Reputational Risks, And Loss Of Client Trust. We Help Research Analysts And Firms
+        Navigate Complex Compliance Requirements So They Can Focus On Delivering
+        High-Quality Research Without Worry.
+    </p>
+
+    <img src="assets/vector2.png" class="sec2-curl" alt="">
+
+    <!-- Illustration -->
+    <img src="assets/section2-image.png"
+         class="sec2-img"
+         alt="Research analyst">
+
+    <!-- Decorative Vector -->
+    <img src="assets/vector1.png"
+         class="sec2-vec1"
+         alt="">
   </div>
+  
   <div class="sec2-right">
-    <p class="sec2-desc">In Today's Regulatory Environment, Even A Small Oversight Can Lead To Penalties, Reputational Risks, And Loss Of Client Trust. We Help Research Analysts And Firms Navigate Complex Compliance Requirements So They Can Focus On Delivering High-Quality Research Without Worry.</p>
+
     <div class="feat-card">
-      <img src="assets/regulatory-clarity.png" alt=""/>
-      <div class="feat-text"><h3>Regulatory Clarity</h3><p>We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p></div>
+        <img src="assets/regulatory-clarity.png" alt="">
+        <div class="feat-text">
+            <h3>Regulatory Clarity</h3>
+            <p>We Decode Complex Compliance Rules Into Simple, Actionable Steps.</p>
+        </div>
     </div>
+
     <div class="feat-card">
-      <img src="assets/hassle-free.png" alt=""/>
-      <div class="feat-text"><h3>Hassle-Free Filings Clarity</h3><p>From Registration To Ongoing Reporting—We Manage It End-To-End.</p></div>
+        <img src="assets/hassle-free.png" alt="">
+        <div class="feat-text">
+            <h3>Hassle-Free Filings Clarity</h3>
+            <p>From Registration To Ongoing Reporting—We Manage It End-To-End.</p>
+        </div>
     </div>
+
     <div class="feat-card">
-      <img src="assets/risk-protection.png" alt=""/>
-      <div class="feat-text"><h3>Risk Protection</h3><p>Stay Ahead Of Audits, Inspections, And Compliance Gaps With Proactive Support.</p></div>
+        <img src="assets/risk-protection.png" alt="">
+        <div class="feat-text">
+            <h3>Risk Protection</h3>
+            <p>Stay Ahead Of Audits, Inspections, And Compliance Gaps With Proactive Support.</p>
+        </div>
     </div>
   </div>
 </section>
